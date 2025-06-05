@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+header {
+    background-color: #5f72be;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    animation: slideDown 0.6s ease-out;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #667eea;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background: #764ba2;
+    transform: scale(1.05);
+}
+main {
+    padding: 30px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-in;
+}
+pre {
+    background: #f0f0f0;
+    padding: 12px;
+    border-left: 4px solid #5f72be;
+    overflow-x: auto;
+}
+
+h1, h2 {
+    color: #444;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+/* Başlık hover rengi */
+.section-title {
+    color: #444;
+    transition: color 0.3s;
+}
+.section-title:hover {
+    color: #5f72be;     /* hover’daki canlı renk */
+}
+
+/* Menü linkleri hover rengini de biraz parlak yapalım */
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+}
+nav ul li a:hover {
+    background: #ff8c42;   /* turuncu-canlı ton */
+    transform: scale(1.05);
+}
+.alt-basliklar {
+    text-align: center;
+    margin-top: 20px;
+}
+.alt-basliklar button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.alt-basliklar button:hover {
+    background-color: #764ba2;
+}
+
+.icerik {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+
