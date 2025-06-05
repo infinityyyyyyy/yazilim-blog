@@ -1,26 +1,66 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Lise öğrencileri için kolay anlaşılır yazılım dersleri ve blog yazıları.">
-    <title>Python Dersleri</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Yazılım Blog – Ana Sayfa</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header><h1>Python Dersleri</h1></header>
-    <nav>
-    <ul>
-        <li><a href="index.html">Ana Sayfa</a></li>
-        <li><a href="hakkimizda.html">Hakkımızda</a></li>
-        <li><a href="iletisim.html">İletişim</a></li>
-    </ul>
-</nav>
+  <header>
+    <h1>Yazılım Blog</h1>
+    <p>Lise öğrencileri için yazılım rehberi</p>
+  </header>
 
-    
-    <main>
-        <h2>print() Fonksiyonu</h2>
-        <p>Python'da ekrana yazdırmak için <code>print()</code> fonksiyonu kullanılır.</p>
-        <pre><code>print("Merhaba Python")</code></pre>
-    </main>
+  <nav>
+    <ul>
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="alt-basliklar">
+      <button onclick="showSection('tarih')">Python'un Tarihi</button>
+      <button onclick="showSection('nedir')">Python Nedir?</button>
+      <button onclick="showSection('kutuphane')">Python Kütüphaneleri</button>
+      <button onclick="showSection('projeler')">Python ile Projeler</button>
+    </div>
+
+    <section id="tarih" class="icerik">
+      <h2>Python'un Tarihi</h2>
+      <p>Python, 1980'li yılların sonunda Guido van Rossum tarafından geliştirilmeye başlanmıştır. İlk sürümü 1991 yılında yayımlanmıştır. Dilin adı, Monty Python adlı bir İngiliz komedi grubundan esinlenilerek verilmiştir. Python, basit sözdizimi ve okunabilirliği sayesinde kısa sürede yaygınlaşmıştır. 2000 yılında Python 2.0 sürümü yayınlanarak Unicode desteği ve çöp toplayıcı sistemi eklenmiştir. 2008'de Python 3.0 ile büyük değişiklikler yapılmış ve eski sürümlerle uyum kısmen kaldırılmıştır. Python, açık kaynak olması sayesinde dünya çapında geniş bir topluluk tarafından desteklenmektedir. Günümüzde eğitimden yapay zekâya kadar birçok alanda kullanılmaktadır. Özellikle yeni başlayanlar için ideal bir dil olarak kabul edilmektedir. Python'un tarihi, sürekli gelişen ve büyüyen bir açık kaynak başarısının hikâyesidir.</p>
+    </section>
+
+    <section id="nedir" class="icerik">
+      <h2>Python Nedir?</h2>
+      <p>Python, yüksek seviyeli ve çok amaçlı bir programlama dilidir. Okunabilirliği ön planda tutan sözdizimi ile öne çıkar. Hem nesne yönelimli hem de işlevsel programlama yapısına uygundur. Python, yorumlanan bir dil olduğu için derleme işlemine gerek duymaz. Bu özellik geliştirme sürecini oldukça hızlandırır. Öğrenmesi kolaydır ve yeni başlayanlar için uygundur. Geniş kütüphane desteği sayesinde birçok alanda kullanılabilir. Web geliştirme, veri bilimi, otomasyon ve yapay zekâ gibi alanlarda yaygın olarak tercih edilir. Açık kaynak olması nedeniyle sürekli güncellenir ve topluluk desteği fazladır. Python, esnek ve güçlü bir dil olarak hem bireysel hem de kurumsal projelerde kullanılır.</p>
+    </section>
+
+    <section id="kutuphane" class="icerik">
+      <h2>Python Kütüphaneleri</h2>
+      <p>Python, güçlü ve geniş kapsamlı kütüphaneleri sayesinde birçok alanda kullanılabilmektedir. NumPy ve pandas, veri analizi ve işleme için en çok kullanılan kütüphanelerdendir. Matplotlib ve Seaborn, verileri görselleştirmek için kullanılır. Makine öğrenimi alanında scikit-learn, TensorFlow ve PyTorch öne çıkar. Flask ve Django ise web uygulamaları geliştirmek için kullanılan popüler framework’lerdir. Requests, HTTP istekleri yapmak için basit ve güçlü bir kütüphanedir. BeautifulSoup ve Scrapy, web kazıma işlemleri için yaygın olarak tercih edilir. SQLAlchemy, veritabanı işlemlerini kolaylaştırır. OpenCV, görüntü işleme ve yapay görme uygulamalarında kullanılır. Bu zengin kütüphane ekosistemi, Python'u çok yönlü ve güçlü kılar.</p>
+    </section>
+
+    <section id="projeler" class="icerik">
+      <h2>Python ile Yapılabilecek Projeler</h2>
+      <p>Python ile birçok yaratıcı ve öğretici proje geliştirmek mümkündür. Basit bir hesap makinesi uygulaması temel işlem becerilerini kazandırır. Not alma uygulaması ile dosya işlemleri öğrenilir. Hava durumu sorgulayıcı projede API kullanımı ve JSON verisi işlenir. Web kazıyıcı (scraper) projeleri veri çekme pratiği sağlar. Şifre oluşturucu uygulama, rastgele sayı üretme mantığını öğretir. Küçük oyunlar, örneğin “tahmin oyunu”, kullanıcı etkileşimini öğretir. Görsel arayüzlü (GUI) projeler için Tkinter kullanılabilir. Kendi blog sisteminizi yazmak web geliştirme girişidir. Veri analizi projeleri ile tablo verileri analiz edilir. Bu projeler, Python becerilerini artırmak için birebirdir.</p>
+    </section>
+  </main>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.icerik');
+      sections.forEach(sec => sec.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+
+    window.onload = () => {
+      const sections = document.querySelectorAll('.icerik');
+      sections.forEach(sec => sec.style.display = 'none');
+    }
+  </script>
+
+  <footer><p>© 2025 Yazılım Blog</p></footer>
 </body>
 </html>
